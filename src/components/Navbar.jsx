@@ -20,10 +20,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMenuOpen(false)
   }, [location])
+
+  const handleHashNav = (e, hash) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    if (location.pathname === '/') {
+      document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      window.location.href = `/#${hash}`
+    }
+  }
 
   return (
     <nav
@@ -52,7 +61,7 @@ export default function Navbar() {
               const isActive = link.to === '/' ? location.pathname === '/' : location.pathname.startsWith(link.to.replace('/#', ''))
               const baseClass = `text-sm font-medium transition-colors hover:text-white ${isActive && !link.to.includes('#') ? 'text-white' : 'text-zinc-400'}`
               return link.to.startsWith('/#') ? (
-                <a key={link.label} href={link.to} className={baseClass}>
+                <a key={link.label} href={link.to} className={baseClass} onClick={(e) => handleHashNav(e, link.to.replace('/#', ''))}>
                   {link.label}
                 </a>
               ) : (
@@ -104,7 +113,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.to}
                 className="py-2.5 text-zinc-300 hover:text-white font-medium transition-colors border-b border-white/5 last:border-0"
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => handleHashNav(e, link.to.replace('/#', ''))}
               >
                 {link.label}
               </a>
