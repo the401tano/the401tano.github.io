@@ -65,7 +65,7 @@ export default function Hero() {
           </a>
 
           <Link
-            to="/#projects"
+            to="/#making"
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/15 hover:border-white/30 text-white font-semibold text-base transition-all hover:scale-105 active:scale-95 hover:bg-white/5"
           >
             Explore Projects

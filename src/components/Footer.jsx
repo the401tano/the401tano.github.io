@@ -6,8 +6,7 @@ const navColumns = [
     links: [
       { label: 'Home', to: '/' },
       { label: 'About', to: '/about' },
-      { label: 'Projects', to: '/#projects' },
-      { label: 'Brands', to: '/#brands' },
+      { label: 'Now Making', to: '/#making' },
       { label: 'Contact', to: '/#contact' },
     ],
   },
