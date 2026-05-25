@@ -67,8 +67,8 @@ export default function About() {
           </h1>
 
           <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed opacity-0 animate-fade-up-delay">
-            the401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
-            storytelling, and strange ideas that somehow find an audience.
+            A creative home base for comedy, short-form video, family chaos, and strange ideas
+            that somehow find an audience. Built in real time. Figured out in public.
           </p>
         </div>
       </section>
@@ -131,21 +131,20 @@ export default function About() {
             {/* Right: long-form copy */}
             <div className="lg:w-2/3 space-y-6 text-zinc-300 text-lg leading-relaxed">
               <p>
-                the401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
-                storytelling, and strange ideas that somehow find an audience.
+                This started with one guy, a phone, and a completely unreasonable number of ideas.
+                No plan. No team. Just a dad who wanted to make things people actually wanted to watch.
               </p>
               <p>
-                It is built around real family moments, internet absurdity, and the kind of creative
-                experiments that start with <span className="text-white font-medium italic">"this might be dumb"</span>{' '}
-                and end with people asking for part two.
+                The content is built around real family moments, honest storytelling, and the kind of
+                comedy that starts with <span className="text-white font-medium italic">"this might be dumb"</span>{' '}
+                and ends with people tagging their friends.
               </p>
               <p>
-                What started as one dad figuring out how to make something people actually wanted to watch
-                has grown into a framework for doing that across platforms, formats, and ideas that haven't
-                fully arrived yet.
+                It's short-form first. TikTok native. Personality-driven. The kind of stuff that feels
+                human because it actually is — no script, no crew, no filter on the chaos.
               </p>
               <p className="text-zinc-400">
-                Videos. Brands. Merch. Series. Whatever comes next gets built under this roof.
+                What it becomes next is still being figured out. That's the whole point.
               </p>
 
               {/* Pull quote */}
@@ -156,9 +155,8 @@ export default function About() {
               </blockquote>
 
               <p>
-                The collective isn't a team yet. It's a dad, a phone, a lot of ideas, and whatever
-                chaos the week throws at him. But it's growing. Slowly, loudly, and with terrible
-                timing — which is kind of the whole point.
+                It's not a media company. It's not a studio. It's one person building something real,
+                in public, one video at a time — and sharing the whole messy process along the way.
               </p>
             </div>
           </div>
@@ -207,10 +205,10 @@ export default function About() {
               Follow on TikTok
             </a>
             <Link
-              to="/#projects"
+              to="/#making"
               className="px-7 py-3.5 rounded-full border border-white/15 hover:border-white/30 text-white font-semibold transition-all hover:bg-white/5"
             >
-              See the Projects
+              See What's Making
             </Link>
           </div>
         </div>

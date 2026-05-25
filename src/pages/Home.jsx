@@ -3,8 +3,6 @@ import Hero from '../components/Hero'
 import FeatureCard from '../components/FeatureCard'
 import ProjectCard from '../components/ProjectCard'
 
-// ── Featured section data ────────────────────────────────────────────────────
-// TODO: Replace href values with your actual TikTok, YouTube, or page links
 const featured = [
   {
     title: 'Latest Videos',
@@ -23,59 +21,55 @@ const featured = [
     href: 'https://www.tiktok.com/@mattlovesmeli',
   },
   {
-    title: 'Projects',
-    description: 'Longer stuff with actual effort put in. Series, experiments, and creative swings that might actually land.',
-    icon: '🎯',
-    tag: 'Projects',
+    title: 'The Chaos',
+    description: 'Comedy, family moments, and real-time creativity. The actual stuff being made, not a highlight reel.',
+    icon: '🌀',
+    tag: 'Creator Life',
     gradient: 'bg-gradient-to-br from-zinc-800/80 to-zinc-950',
-    href: '/#projects',
+    href: '/#making',
   },
   {
-    title: 'Brands',
-    description: 'The universe is expanding. Merch, sub-brands, and whatever strange little business idea is next.',
-    icon: '🚀',
-    tag: 'Brands',
+    title: 'The Journey',
+    description: 'One dad figuring it out in public. No blueprint, no team, just a phone and too many ideas.',
+    icon: '📍',
+    tag: 'Real Time',
     gradient: 'bg-gradient-to-br from-amber-950/50 to-zinc-900',
-    // TODO: Replace with your merch store or brands page link
-    href: '#',
+    href: '/about',
   },
 ]
 
-// ── Projects section data ────────────────────────────────────────────────────
-// TODO: Replace href values with links to actual project pages or social posts
-const projects = [
+const making = [
   {
     title: 'TikTok Comedy',
     tag: 'Short-Form · Comedy',
-    description: 'The origin story. Where the chaos started, where it lives, and where new ideas get stress-tested in front of strangers.',
+    description: 'Where everything starts. New ideas get posted, stress-tested in front of strangers, and either live or die in the comments.',
     accent: 'bg-orange-500',
     icon: '🎭',
     href: 'https://www.tiktok.com/@mattlovesmeli',
   },
   {
-    title: 'Behind the Scenes',
-    tag: 'Documentary · Process',
-    description: 'The unfiltered reality of making content as a regular dad with a camera and too many ideas for his own good.',
-    accent: 'bg-zinc-500',
-    icon: '🎥',
-    // TODO: Replace with your BTS series link
-    href: '#',
+    title: 'Dad Life',
+    tag: 'Family · Real Life',
+    description: 'Unscripted. Unplanned. Somehow always content. The everyday chaos that turns into the best stuff.',
+    accent: 'bg-zinc-400',
+    icon: '👨‍👧',
+    href: 'https://www.tiktok.com/@mattlovesmeli',
   },
   {
-    title: 'Internet Experiments',
-    tag: 'Format · Creative',
-    description: 'Formats, concepts, and bits that exist because the internet made them possible. Some land. Some don\'t. All worth trying.',
-    accent: 'bg-blue-500',
-    icon: '🧪',
-    href: '#',
+    title: 'The Bits',
+    tag: 'Comedy · Writing',
+    description: 'Jokes, observations, and half-baked ideas that start in the notes app and end up on the internet. Hit rate improving.',
+    accent: 'bg-amber-500',
+    icon: '📝',
+    href: 'https://www.tiktok.com/@mattlovesmeli',
   },
   {
-    title: 'Future Brands',
-    tag: 'Coming Soon',
-    description: 'Ideas that don\'t have names yet. The next weird thing is already in the notes app. Stay tuned.',
+    title: 'Building in Public',
+    tag: 'Creator · Journey',
+    description: 'Making a brand out of nothing, on camera, in real time. No blueprint. Fully documented. Outcomes uncertain.',
     accent: 'bg-violet-500',
-    icon: '🔮',
-    href: '#',
+    icon: '🏗️',
+    href: '/about',
   },
 ]
 
@@ -124,9 +118,9 @@ export default function Home() {
             </h2>
 
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-              the401TanoCollective started as a place for humor, family moments, ridiculous ideas, and internet storytelling.
-              What began as short-form chaos is becoming a creative studio for videos, brands, merch, and whatever strange
-              little gremlin idea shows up next.
+              One dad. One phone. A genuinely unreasonable number of ideas. This is what happens when you stop
+              waiting for permission and just start making things — comedy, family chaos, and whatever
+              weird creative swing comes next.
             </p>
 
             <Link
@@ -142,21 +136,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Projects ─────────────────────────────────────────────────────── */}
-      <section id="projects" className="py-24 sm:py-32 px-5 sm:px-8">
+      {/* ── Current Chaos ────────────────────────────────────────────────── */}
+      <section id="making" className="py-24 sm:py-32 px-5 sm:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-2">Projects</p>
+            <p className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-2">Now Making</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              The universe so far.
+              Current Chaos.
             </h2>
             <p className="text-zinc-400 mt-3 text-lg max-w-xl">
-              From one-take TikToks to actual brand experiments. Here's what's been built.
+              What's actually in the mix. Right now, in real time.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {projects.map(proj => (
+            {making.map(proj => (
               <ProjectCard key={proj.title} {...proj} />
             ))}
           </div>
