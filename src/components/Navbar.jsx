@@ -50,14 +50,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-7">
             {navLinks.map(link => {
               const isActive = link.to === '/' ? location.pathname === '/' : location.pathname.startsWith(link.to.replace('/#', ''))
-              return (
-                <Link
-                  key={link.label}
-                  to={link.to}
-                  className={`text-sm font-medium transition-colors hover:text-white ${
-                    isActive && !link.to.includes('#') ? 'text-white' : 'text-zinc-400'
-                  }`}
-                >
+              const baseClass = `text-sm font-medium transition-colors hover:text-white ${isActive && !link.to.includes('#') ? 'text-white' : 'text-zinc-400'}`
+              return link.to.startsWith('/#') ? (
+                <a key={link.label} href={link.to} className={baseClass}>
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.label} to={link.to} className={baseClass}>
                   {link.label}
                 </Link>
               )
@@ -99,16 +98,27 @@ export default function Navbar() {
         } bg-black/95 backdrop-blur-xl`}
       >
         <div className="px-5 py-4 flex flex-col gap-1">
-          {navLinks.map(link => (
-            <Link
-              key={link.label}
-              to={link.to}
-              className="py-2.5 text-zinc-300 hover:text-white font-medium transition-colors border-b border-white/5 last:border-0"
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map(link =>
+            link.to.startsWith('/#') ? (
+              <a
+                key={link.label}
+                href={link.to}
+                className="py-2.5 text-zinc-300 hover:text-white font-medium transition-colors border-b border-white/5 last:border-0"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.label}
+                to={link.to}
+                className="py-2.5 text-zinc-300 hover:text-white font-medium transition-colors border-b border-white/5 last:border-0"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <a
             href="https://www.tiktok.com/@mattlovesmeli"
             target="_blank"
