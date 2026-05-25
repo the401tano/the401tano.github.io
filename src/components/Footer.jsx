@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="inline-block mb-3">
               <span className="text-white font-extrabold text-xl tracking-tight">
-                The<span className="text-orange-500">401</span>Tano
+                the<span className="text-orange-500">401</span>Tano
                 <span className="text-zinc-500 font-semibold">Collective</span>
               </span>
             </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 pt-6 border-t border-brand-border flex flex-col sm:flex-row items-center justify-between gap-3 text-zinc-600 text-xs">
-          <p>© {new Date().getFullYear()} The401TanoCollective. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} the401TanoCollective. All rights reserved.</p>
           <p className="text-zinc-700">Built for chaos. Staying for the content.</p>
         </div>
       </div>

@@ -124,7 +124,7 @@ export default function Home() {
             </h2>
 
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-              The401TanoCollective started as a place for humor, family moments, ridiculous ideas, and internet storytelling.
+              the401TanoCollective started as a place for humor, family moments, ridiculous ideas, and internet storytelling.
               What began as short-form chaos is becoming a creative studio for videos, brands, merch, and whatever strange
               little gremlin idea shows up next.
             </p>

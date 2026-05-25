@@ -67,7 +67,7 @@ export default function About() {
           </h1>
 
           <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed opacity-0 animate-fade-up-delay">
-            The401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
+            the401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
             storytelling, and strange ideas that somehow find an audience.
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function About() {
             {/* Right: long-form copy */}
             <div className="lg:w-2/3 space-y-6 text-zinc-300 text-lg leading-relaxed">
               <p>
-                The401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
+                the401TanoCollective is a creator-driven production umbrella for comedy, short-form video,
                 storytelling, and strange ideas that somehow find an audience.
               </p>
               <p>

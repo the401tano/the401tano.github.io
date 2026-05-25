@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-1 group">
             <span className="text-white font-extrabold text-base tracking-tight leading-none">
-              The
+              the
               <span className="text-orange-500 group-hover:text-orange-400 transition-colors">401</span>
               Tano
               <span className="text-zinc-400 group-hover:text-zinc-300 transition-colors font-semibold">Collective</span>
